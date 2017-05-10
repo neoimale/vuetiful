@@ -1,5 +1,6 @@
 <template>
-    <div class="vuetiful datatable table-wrapper" :class="tableClasses">
+    <div class="vuetiful">
+    <div class="datatable table-wrapper" :class="tableClasses">
         <table>
             <thead class="datatable-columns">
                 <tr>
@@ -58,6 +59,7 @@
             <input type="text" placeholder="Filter this dataset. Press enter to search..." v-model.lazy="filter" self="size-x1" v-if="optimize">
             <input type="text" placeholder="Filter this dataset..." v-model="filter" self="size-x1" v-else>
         </div>
+    </div>
     </div>
 </template>
 
