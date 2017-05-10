@@ -1,5 +1,5 @@
 <template>
-    <div class="datatable table-wrapper" :class="tableClasses">
+    <div class="vuetiful datatable table-wrapper" :class="tableClasses">
         <table>
             <thead class="datatable-columns">
                 <tr>

@@ -1,91 +1,94 @@
 
 $color-table-row-alt: #FAFAFA;
 
-.table-wrapper {
-    display: block;
-    width: 100%;
-    border: 1px solid $colour-border;
-    border-radius: 2px;
+.vuetiful {
 
-    & table {
-        border: none;
-    }
-}
+    .table-wrapper {
+        display: block;
+        width: 100%;
+        border: 1px solid $colour-border;
+        border-radius: 2px;
 
-table {
-    table-layout: fixed;
-    width: 100%;
-    background-color: $colour-background;
-    border-collapse: collapse;
-    border: 1px solid $colour-border;
-}
-
-.table-striped {
-
-    & tr {
-
-        &:nth-child(even) {
-
-            & > td {
-                background-color: $color-table-row-alt;
-            }
+        & table {
+            border: none;
         }
     }
-}
 
-th,
-td {
-    text-align: left;
-
-    &:last-of-type {
-        border-right: none;
+    table {
+        table-layout: fixed;
+        width: 100%;
+        background-color: $colour-background;
+        border-collapse: collapse;
+        border: 1px solid $colour-border;
     }
-}
 
-th {
-    padding: 0.75rem 1rem;
-    font-weight: 600;
-    background-color: $colour-background-medium;
-    border-right: 1px solid $colour-border;
-    border-bottom: 1px solid $colour-border;
-}
-
-td {
-    padding: 0.5rem 1rem;
-    border-right: 1px solid $colour-border-light;
-    border-bottom: 1px solid $colour-border-light;
-    @include truncate-text;
-}
-
-tbody,
-tfoot {
-
-    &:last-of-type {
+    .table-striped {
 
         & tr {
 
-            &:last-of-type {
+            &:nth-child(even) {
 
                 & > td {
-                    border-bottom: none;
+                    background-color: $color-table-row-alt;
                 }
             }
         }
     }
-}
 
-tfoot {
+    th,
+    td {
+        text-align: left;
 
-    & td {
-        font-weight: 600;
+        &:last-of-type {
+            border-right: none;
+        }
     }
 
-    & tr {
+    th {
+        padding: 0.75rem 1rem;
+        font-weight: 600;
+        background-color: $colour-background-medium;
+        border-right: 1px solid $colour-border;
+        border-bottom: 1px solid $colour-border;
+    }
 
-        &:first-of-type {
+    td {
+        padding: 0.5rem 1rem;
+        border-right: 1px solid $colour-border-light;
+        border-bottom: 1px solid $colour-border-light;
+        @include truncate-text;
+    }
 
-            & td {
-                border-top: 1px solid $colour-border;
+    tbody,
+    tfoot {
+
+        &:last-of-type {
+
+            & tr {
+
+                &:last-of-type {
+
+                    & > td {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    tfoot {
+
+        & td {
+            font-weight: 600;
+        }
+
+        & tr {
+
+            &:first-of-type {
+
+                & td {
+                    border-top: 1px solid $colour-border;
+                }
             }
         }
     }
