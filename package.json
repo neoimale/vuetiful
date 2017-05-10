@@ -3,9 +3,10 @@
   "description": "Component framework written on top of the Vue reactive library",
   "version": "0.1.0",
   "author": "Andrew Courtice",
-  "repository": "https://github.com/andrewcourtice/vuetiful.git",
+  "repository": "https://github.com/neoimale/vuetiful-table.git",
   "license": "MIT",
   "private": true,
+  "main": "src/main.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
     "build:components": "cross-env NODE_ENV=production SCOPE=components webpack --progress --hide-modules",
