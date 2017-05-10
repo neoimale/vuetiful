@@ -278,109 +278,111 @@
 
 <style lang="scss">
     @import "../../assets/styles/abstract/_variables.scss";
+    .vuetiful {
 
-    .datatable {
+        .datatable {
 
-        & th {
-            padding: 0;
-        }
-    }
-
-    .datatable-linenumber-column,
-    .datatable-linenumber-cell {
-        text-align: center;
-    }
-
-    .datatable-linenumber-cell,
-    .datatable-aggregate-cell {
-        font-weight: 600; 
-        background-color: $colour-background-medium !important;
-        border-right-color: $colour-border;
-    }
-
-    .datatable-group-chip {
-        margin-right: 0.5rem;
-    }
-
-    .datatable-collection {
-
-        & .datatable-collection {
-
-            & .datatable-resultset {
-                border-top: 1px solid $colour-border;
+            & th {
+                padding: 0;
             }
         }
-    }
 
-    .datatable-group {
-        padding: 0;
-        background-color: $colour-background;
-        border-bottom: 1px solid $colour-border;
-    }
+        .datatable-linenumber-column,
+        .datatable-linenumber-cell {
+            text-align: center;
+        }
 
-    .datatable-groups-header {
-        border-bottom: 1px solid $colour-border;
-    }
+        .datatable-linenumber-cell,
+        .datatable-aggregate-cell {
+            font-weight: 600;
+            background-color: $colour-background-medium !important;
+            border-right-color: $colour-border;
+        }
 
-    .datatable-group-header {
-        padding: 0.5rem 1rem;
-        background-color: $colour-background-medium;
-    }
+        .datatable-group-chip {
+            margin-right: 0.5rem;
+        }
 
-    .datatable-grouping-over {
-        box-shadow: 0 0 0 2px $colour-primary;
-    }
+        .datatable-collection {
 
-    .datatable-row-indent {
-        display: inline-block;
-        width: 1.5rem;
-        height: 1em;
-    }
+            & .datatable-collection {
 
-    .datatable-group-label {
-        font-weight: 600;
-    }
+                & .datatable-resultset {
+                    border-top: 1px solid $colour-border;
+                }
+            }
+        }
 
-    .datatable-info-cell {
-        text-align: center;
-        font-weight: 600;
-    }
-
-    .datatable-aggregators {
-
-        & .datatable-info-cell  {
+        .datatable-group {
+            padding: 0;
+            background-color: $colour-background;
             border-bottom: 1px solid $colour-border;
         }
-    }
 
-    .datatable-options {
-        padding: 0.75rem 1rem;
-        background-color: $colour-background-medium;
-        border-top: 1px solid $colour-border;
-    }
+        .datatable-groups-header {
+            border-bottom: 1px solid $colour-border;
+        }
 
-    .datatable-editable {
+        .datatable-group-header {
+            padding: 0.5rem 1rem;
+            background-color: $colour-background-medium;
+        }
 
-        & .datatable-cell {
-            position: relative;
-            padding: 0 !important;
-            overflow: visible;
+        .datatable-grouping-over {
+            box-shadow: 0 0 0 2px $colour-primary;
+        }
 
-            & input,
-            & select {
-                display: block;
-                width: 100%;
-                height: auto;
-                padding: 0.5rem 1rem;
-                background-color: transparent;
-                border: none;
-                border-radius: 0;
+        .datatable-row-indent {
+            display: inline-block;
+            width: 1.5rem;
+            height: 1em;
+        }
 
-                &:focus,
-                &:active {
-                    box-shadow: 0 0 0 2px $colour-primary;
+        .datatable-group-label {
+            font-weight: 600;
+        }
+
+        .datatable-info-cell {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .datatable-aggregators {
+
+            & .datatable-info-cell {
+                border-bottom: 1px solid $colour-border;
+            }
+        }
+
+        .datatable-options {
+            padding: 0.75rem 1rem;
+            background-color: $colour-background-medium;
+            border-top: 1px solid $colour-border;
+        }
+
+        .datatable-editable {
+
+            & .datatable-cell {
+                position: relative;
+                padding: 0 !important;
+                overflow: visible;
+
+                & input,
+                & select {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    padding: 0.5rem 1rem;
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 0;
+
+                    &:focus,
+                    &:active {
+                        box-shadow: 0 0 0 2px $colour-primary;
+                    }
                 }
-            }          
+            }
         }
     }
 
